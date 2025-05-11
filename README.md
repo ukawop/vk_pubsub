@@ -17,16 +17,20 @@
 git clone https://github.com/ukawop/vk_pubsub.git
 cd vk_pubsub
 ```
-2. установите зависимости:
+2. Установите зависимости:
 ```bash
 go mod download
 ```
-3. Подпишитесь на уведомления:
+3. Запустите приложение:
+```bash
+make run
+```
+4. Подпишитесь на уведомления:
 ```bash
 grpcurl -plaintext -proto proto/subpub/subpub.proto \
   -d '{"key": "news"}' localhost:9000 subpubv1.PubSub/Subscribe
 ```
-4. Получайте публикации:
+5. Получайте публикации:
 ```bash
 grpcurl -plaintext -proto proto/subpub/subpub.proto \
   -d '{"key": "news", "data": "New update available!"}' \
