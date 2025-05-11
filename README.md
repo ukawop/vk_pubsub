@@ -1,8 +1,5 @@
 # PubSub gRPC Service
 
-[![Go Version](https://img.shields.io/github/go-mod/go-version/yourusername/vk_pubsub)](https://golang.org/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-
 Реализация gRPC сервиса для публикации и подписки на события. Сервис позволяет клиентам подписываться на темы и получать сообщения в реальном времени.
 
 ## 🚀 Особенности
